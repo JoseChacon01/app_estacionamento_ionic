@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Estacionamento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="block" (click)="listarEstacionamentos()">Lista de Estacionamentos <ion-icon slot="end"  name="pin-outline"></ion-icon> </ion-button>
+  <ion-button expand="block" (click)="addEstacionamento()">Cadastrar Estacionamento <ion-icon slot="end" name="add-outline"></ion-icon> </ion-button>
+</ion-content>
