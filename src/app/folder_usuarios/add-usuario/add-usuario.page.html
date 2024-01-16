@@ -1,17 +1,52 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start" (click)="usuario()">
-      <ion-icon name="arrow-back"> </ion-icon>
+      <ion-back-button default-href="#"></ion-back-button>
     </ion-buttons>
     <ion-title>Adicionar Usuários</ion-title>
     
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <!-- <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">listar-carros</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
+<ion-content >
+
+  <ion-item>
+    <ion-label position="floating">Id Usuário</ion-label>
+    <ion-input placeholder="Unico"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input [(ngModel)]="nome" placeholder="Nome completo"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">CPF</ion-label>
+    <ion-input placeholder="Somente números"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">CNH</ion-label>
+    <ion-input placeholder="Somente números"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Validade</ion-label><br>
+    <ion-input  type="date" placeholder="validade"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Telefone</ion-label>
+    <ion-input placeholder="Conato"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">E-mail</ion-label>
+    <ion-input placeholder="Pessoal"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" (click)="addUsuario()">Salvar</ion-button>
+
 </ion-content>
+
+
